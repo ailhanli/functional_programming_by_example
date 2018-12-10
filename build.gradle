@@ -1,0 +1,12 @@
+apply plugin: 'eclipse'
+apply plugin: 'java'
+
+defaultTasks 'eclipse'
+
+repositories{
+	mavenCentral();
+}
+
+dependencies{
+	compile  'org.apache.logging.log4j:log4j-core:2.7'
+}

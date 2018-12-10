@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry output="bin/main" kind="src" path="src/main/java">
+		<attributes>
+			<attribute name="gradle_scope" value="main"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry output="bin/test" kind="src" path="src/test/java">
+		<attributes>
+			<attribute name="gradle_scope" value="test"/>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry output="bin/main" kind="src" path="src/main/resources">
+		<attributes>
+			<attribute name="gradle_scope" value="main"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin/default"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8/"/>
+	<classpathentry sourcepath="C:/Users/abdullah.ilhanli/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.7/5dc93d7040d2c19b84335b139c16c93473c5899/log4j-core-2.7-sources.jar" kind="lib" path="C:/Users/abdullah.ilhanli/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.7/a3f2b4e64c61a7fc1ed8f1e5ba371933404ed98a/log4j-core-2.7.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/abdullah.ilhanli/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.7/87b0c1c6bce3b1b251ba72464483e46cffaa1b5b/log4j-api-2.7-sources.jar" kind="lib" path="C:/Users/abdullah.ilhanli/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.7/8de00e382a817981b737be84cb8def687d392963/log4j-api-2.7.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+</classpath>
