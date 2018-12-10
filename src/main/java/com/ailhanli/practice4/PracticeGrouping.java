@@ -8,6 +8,11 @@ import com.sun.javafx.collections.MappingChange.Map;
 
 public class PracticeGrouping {
 	
+	//practice 4: finding total salary of employee which has same age
+	public Map<Integer, Double> getSumofEmployeeSalaryByTheirAge(){
+		return null;
+	}
+	
 	public static void main(String[] args) {
 	
 		List<Employee> employees = Arrays.asList(
@@ -22,9 +27,5 @@ public class PracticeGrouping {
 		employees.stream().collect(Collectors.groupingBy(Employee::getAge, Collectors.summingDouble(Employee::getSalary)));
 	}
 	
-//	public Map<Integer, Double> getSumofEmployeeSalaryByTheirAge(){
-//		
-//	
-//		
-//	}
+	
 }
