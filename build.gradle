@@ -9,4 +9,5 @@ repositories{
 
 dependencies{
 	compile  'org.apache.logging.log4j:log4j-core:2.7'
+	testCompile 'junit:junit:4.12'
 }

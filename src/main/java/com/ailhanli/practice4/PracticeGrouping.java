@@ -9,8 +9,9 @@ import com.sun.javafx.collections.MappingChange.Map;
 public class PracticeGrouping {
 	
 	//practice 4: finding total salary of employee which has same age
+	// what if we write it in imperative programming? lets talk!
 	public Map<Integer, Double> getSumofEmployeeSalaryByTheirAge(){
-		return null;
+		 return null;
 	}
 	
 	public static void main(String[] args) {

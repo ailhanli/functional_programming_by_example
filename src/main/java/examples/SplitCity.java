@@ -1,4 +1,4 @@
-package com.ailhanli.practice6;
+package examples;
 import static java.util.stream.Collectors.toList;
 import static java.util.stream.Collectors.toSet;
 

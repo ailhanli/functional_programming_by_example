@@ -1,9 +1,10 @@
-package com.ailhanli.practice7;
+package com.ailhanli.practice6;
 
 import java.util.Stack;
 
 public class ParantesisSolution {
 
+	//you cannot make this functionality functional
 	public boolean isBalanced(String word) {
 		Stack<String> stack = new Stack<>();
 

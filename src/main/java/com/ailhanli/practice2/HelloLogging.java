@@ -30,4 +30,19 @@ public class HelloLogging {
 		HelloLogging hl = new HelloLogging();
 		hl.doSomething();
 	}
+	
+	//task: use lazy execution
+	
+//	public void doSaomethingLazy() {
+//		System.out.println("function is started "+LocalDateTime.now());
+//		
+//		logger.debug(()->getMessage());
+//		
+//		System.out.println("function is finished "+LocalDateTime.now());
+//	}
+//	
+//	public static void main(String[] args) {
+//		HelloLogging hl = new HelloLogging();
+//		hl.doSaomethingLazy();
+//	}
 }
