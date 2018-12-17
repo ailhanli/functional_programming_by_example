@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public class ParantesisSolution {
 
-	//you cannot make this functionality functional
+	//you cannot use lambda expression or stream api for this kind of logics
 	public boolean isBalanced(String word) {
 		Stack<String> stack = new Stack<>();
 

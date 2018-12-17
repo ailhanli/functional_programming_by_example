@@ -6,8 +6,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 
-//when we call getMessage in logger.debug as an argument. it will execute immediately even the log level is WARN
-public class HelloLogging {
+//log4j support lambda. now out 3 seconds taken getMessage wont execute if the logger level is WARN
+public class HelloLoggingLazy {
 
 	private Logger logger = LogManager.getLogger(getClass());
 
@@ -28,9 +28,21 @@ public class HelloLogging {
 		return "Hello world!";
 	}
 
+	
+	//task: use lazy execution
+	
+	public void doSaomethingLazy() {
+		System.out.println("function is started "+LocalDateTime.now());
+		
+		logger.debug(()->getMessage());
+		
+		System.out.println("function is finished "+LocalDateTime.now());
+	}
+	
 	public static void main(String[] args) {
-		HelloLogging hl = new HelloLogging();
+		HelloLoggingLazy hl = new HelloLoggingLazy();
 		hl.doSomething();
 	}
+	
 }
 

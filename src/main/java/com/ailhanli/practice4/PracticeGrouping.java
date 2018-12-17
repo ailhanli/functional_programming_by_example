@@ -4,16 +4,10 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import com.sun.javafx.collections.MappingChange.Map;
-
 public class PracticeGrouping {
 	
-	//practice 4: finding total salary of employee which has same age
+	//practice 4: finding total salary of employee for each age group
 	// what if we write it in imperative programming? lets talk!
-	public Map<Integer, Double> getSumofEmployeeSalaryByTheirAge(){
-		 return null;
-	}
-	
 	public static void main(String[] args) {
 	
 		List<Employee> employees = Arrays.asList(
@@ -27,6 +21,5 @@ public class PracticeGrouping {
 				
 		employees.stream().collect(Collectors.groupingBy(Employee::getAge, Collectors.summingDouble(Employee::getSalary)));
 	}
-	
 	
 }

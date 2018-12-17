@@ -1,14 +1,12 @@
 package examples;
-import static java.util.stream.Collectors.toList;
 import static java.util.stream.Collectors.toSet;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Arrays;
-import java.util.List;
 import java.util.Set;
-import java.io.*;
 
 public class SplitCity {
 	public static void main(String[] args) throws IOException {
@@ -20,18 +18,18 @@ public class SplitCity {
 		}
 	
 		Set<String> existingCities = Files
-				.lines(Paths.get("C:\\Users\\abdullah.ilhanli\\Desktop\\city_pair\\"+groupCode+"\\existing_cities.txt"))
+				.lines(Paths.get("..\\city_pair\\"+groupCode+"\\existing_cities.txt"))
 				.collect(toSet());
 		
 		try(PrintWriter pw = new PrintWriter(Files.newBufferedWriter(Paths.get("C:\\Users\\abdullah.ilhanli\\Desktop\\city_pair\\"+groupCode+"\\result.sql")))){
 		
 			Files
-			.lines(Paths.get("C:\\Users\\abdullah.ilhanli\\Desktop\\city_pair\\"+groupCode+"\\city_pair.txt"))
+			.lines(Paths.get("..\\city_pair\\"+groupCode+"\\city_pair.txt"))
 			.flatMap(a->Arrays.stream(new String[] {a.substring(0, 3), a.substring(3, 6)}))
 			.distinct()
 			.filter(c->!existingCities.contains(c))
 			.sorted()
-			.map(s->"insert into city_groups (group_code ,city_code,city_group_isn)  values ('"+groupCode+"','"+s+"',group_def_s.nextval);")
+			.map(s->"insert into table1 (a ,b,c)  values ('"+groupCode+"','"+s+"',my_s.nextval);")
 			.forEach(pw::println);
 		}catch(Exception e){
 			e.printStackTrace();
